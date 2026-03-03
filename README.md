@@ -184,6 +184,24 @@ Uruchamia pelny zestaw 135 testow:
 - Testy integracyjne (pelny przebieg symulacji z pliku JSON)
 - Testy porownawcze (benchmark) z 4 scenariuszami i wieloma konfiguracjami
 
+### Docker
+
+Projekt mozna uruchomic bez instalacji Node.js — wystarczy Docker.
+
+**Frontend** (interfejs graficzny na `http://localhost:3000`):
+
+```bash
+docker compose up frontend
+```
+
+**CLI** (przetwarzanie pliku JSON):
+
+```bash
+docker compose run --rm cli /data/input.json /data/output.json
+```
+
+Plik wejsciowy (`input.json`) powinien znajdowac sie w katalogu projektu — jest montowany jako `/data` w kontenerze.
+
 ## Architektura
 
 ```
