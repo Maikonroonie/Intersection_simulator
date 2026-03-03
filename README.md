@@ -225,3 +225,11 @@ frontend/
 ```
 
 Projekt stosuje architekture warstwowa z wyraznym oddzieleniem domeny (algorytm, reguly) od infrastruktury (I/O, walidacja). Frontend zawiera niezalezna implementacje algorytmu sterowania, zsynchronizowana z backendem pod wzgledem logiki i parametrow.
+
+### App Demo
+
+![configuration](assets/image1.png)
+
+![simulation1](assets/image2.png)
+
+![simulation2](assets/image3.png)
